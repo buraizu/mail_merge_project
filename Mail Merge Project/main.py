@@ -7,8 +7,6 @@
     #Hint2: This method will also help you: https://www.w3schools.com/python/ref_string_replace.asp
         #Hint3: THis method will help you: https://www.w3schools.com/python/ref_string_strip.asp
 
-return_letters = []
-
 with open("Input/Letters/starting_letter.txt", mode="r") as starting_letter:
     # print(starting_letter.readlines())
     names = open("Input/Names/invited_names.txt")
@@ -19,11 +17,3 @@ with open("Input/Letters/starting_letter.txt", mode="r") as starting_letter:
         for line in starting_letter_list:
             new_file.write(line.replace("[name]", scrubbed_name))
         new_file.close()
-        return_letters.append(new_file)
-
-for letter in return_letters:
-    print(letter)
-
-
-
-
